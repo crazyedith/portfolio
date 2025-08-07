@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aim For Sports - Premier Sports Management</title>
+    <meta
+      name="description"
+      content="Professional sports management services including athlete representation, event coordination, and sponsorship acquisition."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .hero {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("assets/Football.jpg"); /* Replace this with your actual path */
+        background-size: cover;
+        background-position: center;
+        filter: blur(5px);
+        opacity: 1;
+        z-index: 0;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* semi-transparent black overlay */
+        z-index: 1;
+      }
+
+      .hero .container,
+      .hero-content {
+        position: relative;
+        z-index: 2; /* Makes sure content sits above background and overlay */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="logo">
+            <img
+              src="assets/afs-logo.jpg"
+              alt="Aim For Sports Logo"
+              width="120"
+            />
+          </a>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#services" class="nav-link">Services</a></li>
+              <li><a href="#clients" class="nav-link">Events</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <!-- Background Image + Overlay -->
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title" style="font-family: Playfair Display, serif">
+            Aim For Sports
+          </h1>
+          <p class="hero-subtitle">
+            Redefining sports event standards with quality and commitment
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+            <a href="#services" class="btn btn-outline">Our Services</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <a href="#about" class="scroll-down">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About AFS</h2>
+          <p class="section-subtitle">
+            Your trusted partner in sports management
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              AFS is a premier sports management company dedicated to empowering
+              athletes and sports organizations to achieve their full potential.
+              With a team of experienced professionals, we provide comprehensive
+              solutions tailored to the unique needs of each client.
+            </p>
+            <p>
+              Our mission is to bridge the gap between talent and opportunity,
+              creating pathways to success in the competitive world of sports.
+            </p>
+            <div class="stats">
+              <div class="stat-item">
+                <span class="stat-number" data-count="500">0</span>
+                <span class="stat-label">Athletes Represented</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="2">0</span>
+                <span class="stat-label">Events Managed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="6">0</span>
+                <span class="stat-label">Global Partners</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="assets/sanketTeam.jpg" alt="AFS Team" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">
+            Comprehensive solutions for your sports career
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3 class="service-title">Athlete Management</h3>
+            <ul class="service-features">
+              <li>Career planning & strategy</li>
+              <li>Contract negotiation</li>
+              <li>Brand development</li>
+              <li>Media relations</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <h3 class="service-title">Event Management</h3>
+            <ul class="service-features">
+              <li>Tournament organization</li>
+              <li>Training camps</li>
+              <li>Sponsorship activation</li>
+              <li>Logistics coordination</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3 class="service-title">Sponsorship</h3>
+            <ul class="service-features">
+              <li>Brand partnerships</li>
+              <li>Endorsement deals</li>
+              <li>Marketing campaigns</li>
+              <li>Revenue optimization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="section clients" id="clients">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Sponsers</h2>
+          <p class="section-subtitle">
+            Trusted by many athletes and organizations
+          </p>
+        </div>
+        <div class="clients-slider">
+          <div class="client-logo">
+            <img src="assets/totalSports.jpg" alt="Client Logo" />
+          </div>
+          <div class="client-logo">
+            <img src="assets/sportify.jpg" alt="Client Logo" />
+          </div>
+          <div class="client-logo">
+            <img src="assets/decathlon.jpg" alt="Client Logo" />
+          </div>
+          <div class="client-logo">
+            <img src="assets/UpUrFit.jpg" alt="Client Logo" />
+          </div>
+          <div class="client-logo">
+            <img src="assets/redbull.jpg" alt="Client Logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Success Stories</h2>
+          <p class="section-subtitle">The events we conducted</p>
+        </div>
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>
+                “The 'Aim for Sports' Football Championship - Season 1 was
+                efficiently planned and successfully executed.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>
+              Our Aim is simple :<br />
+              celebrate sports, create experiences.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Thane, India 400001</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <p>+91 75883 10769</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>sanketsarkarpns@gmail.com</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/share/1Cke7ZKf8F/"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/aimforsports?igsh=MWZ2djA1YTJlemFtbQ=="
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" placeholder="Phone Number" />
+              </div>
+              <div class="form-group">
+                <select id="service" required>
+                  <option value="" disabled selected>Select Service</option>
+                  <option value="athlete">Athlete Management</option>
+                  <option value="event">Event Management</option>
+                  <option value="sponsorship">Sponsorship</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img
+              src="assets/afs_circular_transparent.png"
+              alt="Aim For Sports Logo"
+              width="120"
+            />
+            <p>
+              Empowering athletes and organizations to achieve sporting
+              excellence through strategic management solutions.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#clients">Events</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#services">Athlete Management</a></li>
+              <li><a href="#services">Event Management</a></li>
+              <li><a href="#services">Sponsorship</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Upcoming events AFS pickle ball championship season -1</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" required />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Aim For Sports. All Rights Reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Wait for the DOM to be fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Navigation toggle for mobile
+        const navToggle = document.querySelector(".nav-toggle");
+        const navList = document.querySelector(".nav-list");
+
+        if (navToggle) {
+          navToggle.addEventListener("click", function () {
+            navList.classList.toggle("active");
+          });
+        }
+
+        // Close mobile menu when clicking on a nav link
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            if (navList.classList.contains("active")) {
+              navList.classList.remove("active");
+            }
+          });
+        });
+
+        // Sticky header on scroll
+        const header = document.querySelector(".header");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 100) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+        });
+
+        // Back to top button
+        const backToTopButton = document.createElement("a");
+        backToTopButton.href = "#";
+        backToTopButton.className = "back-to-top";
+        backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
+        document.body.appendChild(backToTopButton);
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.add("active");
+          } else {
+            backToTopButton.classList.remove("active");
+          }
+        });
+
+        backToTopButton.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+        // Animate statistics counter
+        function animateStats() {
+          const stats = document.querySelectorAll(".stat-number");
+          stats.forEach((stat) => {
+            const target = parseInt(stat.getAttribute("data-count"));
+            const duration = 2000; // 2 seconds
+            const increment = target / (duration / 16); // 60fps
+            let current = 0;
+
+            const counter = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                stat.textContent = target;
+                clearInterval(counter);
+              } else {
+                stat.textContent = Math.floor(current);
+              }
+            }, 16);
+          });
+        }
+
+        // Check if element is in viewport
+        function isInViewport(element) {
+          const rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <=
+              (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+
+        // Only animate when stats section is in viewport
+        let hasAnimated = false;
+        window.addEventListener("scroll", function () {
+          if (
+            !hasAnimated &&
+            document.querySelector(".stats") &&
+            isInViewport(document.querySelector(".stats"))
+          ) {
+            animateStats();
+            hasAnimated = true;
+          }
+        });
+
+        // Initial check if stats are already in viewport on page load
+        if (
+          document.querySelector(".stats") &&
+          isInViewport(document.querySelector(".stats"))
+        ) {
+          animateStats();
+          hasAnimated = true;
+        }
+
+        // Form submission handling
+        const contactForm = document.getElementById("contactForm");
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const service = document.getElementById("service").value;
+            const message = document.getElementById("message").value;
+
+            // Here you would typically send the form data to a server
+            // For demonstration, we'll just log it and show a success message
+            console.log({
+              name,
+              email,
+              phone,
+              service,
+              message,
+            });
+
+            // Show success message
+            const formContainer = contactForm.parentElement;
+            formContainer.innerHTML = `
+                <div class="success-message">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank you for your message!</h3>
+                    <p>We will get back to you as soon as possible.</p>
+                </div>
+            `;
+          });
+        }
+
+        // Newsletter form handling
+        const newsletterForm = document.querySelector(".newsletter-form");
+        if (newsletterForm) {
+          newsletterForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const email = this.querySelector('input[type="email"]').value;
+            console.log("Newsletter subscription:", email);
+
+            // Show success message
+            const formContainer = newsletterForm.parentElement;
+            const originalContent = formContainer.innerHTML;
+            formContainer.innerHTML = `
+                <p class="success-message">Thank you for subscribing to our newsletter!</p>
+            `;
+
+            // Reset form after 3 seconds
+            setTimeout(() => {
+              formContainer.innerHTML = originalContent;
+
+              // Re-attach event listener to the new form
+              const newForm = formContainer.querySelector(".newsletter-form");
+              if (newForm) {
+                newForm.addEventListener("submit", arguments.callee);
+              }
+            }, 3000);
+          });
+        }
+
+        // Simple clients/testimonials slider functionality
+        // For a more robust slider, consider using a library like Swiper.js
+        function initializeSliders() {
+          const clientsSlider = document.querySelector(".clients-slider");
+          const testimonialsSlider = document.querySelector(
+            ".testimonials-slider"
+          );
+
+          // Sample code for auto-sliding testimonials (optional)
+          if (testimonialsSlider && testimonialsSlider.children.length > 1) {
+            let currentSlide = 0;
+            const testimonials = testimonialsSlider.children;
+
+            // Hide all testimonials except the first one
+            for (let i = 1; i < testimonials.length; i++) {
+              testimonials[i].style.display = "none";
+            }
+
+            // Auto-rotate testimonials every 5 seconds
+            setInterval(() => {
+              testimonials[currentSlide].style.display = "none";
+              currentSlide = (currentSlide + 1) % testimonials.length;
+              testimonials[currentSlide].style.display = "block";
+            }, 5000);
+          }
+        }
+
+        // Initialize sliders
+        initializeSliders();
+
+        // Add smooth scrolling for anchor links
+        document
+          .querySelectorAll('a[href^="#"]:not(.back-to-top)')
+          .forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+              const targetId = this.getAttribute("href");
+
+              if (targetId === "#") return;
+
+              e.preventDefault();
+
+              const targetElement = document.querySelector(targetId);
+              if (targetElement) {
+                // Offset for header height
+                const headerHeight =
+                  document.querySelector(".header").offsetHeight;
+                const targetPosition =
+                  targetElement.getBoundingClientRect().top +
+                  window.scrollY -
+                  headerHeight;
+
+                window.scrollTo({
+                  top: targetPosition,
+                  behavior: "smooth",
+                });
+              }
+            });
+          });
+      });
+    </script>
+  </body>
+</html>
